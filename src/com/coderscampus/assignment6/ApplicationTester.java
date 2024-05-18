@@ -1,7 +1,5 @@
 package com.coderscampus.assignment6;
 
-import java.util.List;
-
 public class ApplicationTester {
 
     public static void main(String[] args) {
