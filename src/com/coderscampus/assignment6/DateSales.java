@@ -1,11 +1,12 @@
 package com.coderscampus.assignment6;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class DateSales {
 
-    LocalDate date;
-    Integer numSales;
+    private LocalDate date;
+    private Integer numSales;
 
     DateSales(LocalDate date, Integer numSales) {
         this.date = date;
@@ -26,5 +27,10 @@ public class DateSales {
 
     public void setNumSales(Integer numSales) {
         this.numSales = numSales;
+    }
+
+    public String toString()
+    {
+        return date.format(DateTimeFormatter.ofPattern("MMM-yy")) + "," + numSales;
     }
 }
