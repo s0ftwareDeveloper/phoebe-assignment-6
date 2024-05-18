@@ -15,8 +15,7 @@ public class FileService {
 
     String fileName;
 
-    FileService(String file)
-    {
+    FileService(String file) {
         this.fileName = file;
     }
 

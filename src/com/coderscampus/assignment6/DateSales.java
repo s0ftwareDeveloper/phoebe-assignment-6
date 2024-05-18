@@ -29,8 +29,7 @@ public class DateSales {
         this.numSales = numSales;
     }
 
-    public String toString()
-    {
+    public String toString() {
         return date.format(DateTimeFormatter.ofPattern("MMM-yy")) + "," + numSales;
     }
 }
